@@ -4,6 +4,7 @@ on:
   schedule:
     # Run every day at 18:00 UTC, which is noon CST (not accounting for daylight saving time)
     - cron: '0 18 * * *'
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
   run-script:
